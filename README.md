@@ -1,5 +1,5 @@
-Guestful :: Module :: JSON Serializer
-===============================
+Guestful :: Module :: Undertow Jersey Container
+===============================================
 
 Add in your POM:
 
@@ -17,12 +17,12 @@ and
 ```
 <dependency>
     <groupId>com.guestful.module</groupId>
-    <artifactId>guestful.module.json-serializer</artifactId>
+    <artifactId>guestful.module.jersey-container-undertow</artifactId>
     <version>?</version>
 </dependency>
 ```
 
-Checkout last version [here](https://bintray.com/guestful/maven/guestful.module.json-serializer/view)
+Checkout last version [here](https://bintray.com/guestful/maven/guestful.module.jersey-container-undertow/view)
 
-[![Build Status](https://drone.io/github.com/guestful/module.json-serializer/status.png)](https://drone.io/github.com/guestful/module.json-serializer/latest)
+[![Build Status](https://drone.io/github.com/guestful/module.jersey-container-undertow/status.png)](https://drone.io/github.com/guestful/module.jersey-container-undertow/latest)
 
