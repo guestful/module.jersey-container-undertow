@@ -43,20 +43,16 @@ public class UndertowContainer extends Container {
 
     private Undertow server;
 
-    public Container start() throws Exception {
-        if (isStopped()) {
-            server = buildServer();
-            server.start();
-        }
-        return this;
+    @Override
+    protected void doStart() throws Exception {
+        server = buildServer();
+        server.start();
     }
 
-    public Container stop() throws Exception {
-        if (isRunning()) {
-            server.stop();
-            server = null;
-        }
-        return this;
+    @Override
+    protected void doStop() throws Exception {
+        server.stop();
+        server = null;
     }
 
     @Override
@@ -84,7 +80,7 @@ public class UndertowContainer extends Container {
             .setDisplayName(UndertowContainer.class.getSimpleName())
             .setEagerFilterInit(true);
 
-        Class<? extends Application> app = getApplication();
+        Class<? extends Application> app = getApplicationClass();
         if (app != null) {
             ServletInfo holder = Servlets.servlet(app.getName(), ServletContainer.class)
                 .setLoadOnStartup(0)
