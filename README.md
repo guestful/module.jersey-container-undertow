@@ -1,5 +1,14 @@
-Guestful :: Module :: Undertow Jersey Container
-===============================================
+Undertow Jersey Container
+=========================
+
+[Undertow](http://undertow.io/) implementation for [Guestful container api](/module.jersey-container).
+
+Checkout last version [here](https://bintray.com/guestful/maven/guestful.module.jersey-container-undertow/view)
+
+[![Build Status](https://drone.io/github.com/guestful/module.jersey-container-undertow/status.png)](https://drone.io/github.com/guestful/module.jersey-container-undertow/latest)
+
+Setup
+-----
 
 Add in your POM:
 
@@ -22,7 +31,4 @@ and
 </dependency>
 ```
 
-Checkout last version [here](https://bintray.com/guestful/maven/guestful.module.jersey-container-undertow/view)
-
-[![Build Status](https://drone.io/github.com/guestful/module.jersey-container-undertow/status.png)](https://drone.io/github.com/guestful/module.jersey-container-undertow/latest)
-
+See [Guestful container api](/module.jersey-container) for usage
